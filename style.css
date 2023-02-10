@@ -71,7 +71,7 @@ nav ul li a {
     ul{
       position: fixed;
       width: 100%;
-      height: 100vh;
+      height: 100vh;     
       background: #2c3e50;
       top: 80px;
       left: -100%;
@@ -86,13 +86,42 @@ nav ul li a {
     nav ul li a{
       font-size: 20px;
     }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
+   
+    a:hover{
+        background: none;
+        color: #2443cc;
     }
+
     #check:checked ~ ul{
       left: 0;
     }
+
+    .titulo {
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .container {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .container-home {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 75px;
+    }
+    
+    .orient {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 25px;
+        color:red;
+    }
+
   }
   @media (max-width: 858px){
     .checkbtn{
@@ -102,7 +131,7 @@ nav ul li a {
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #2c3e50;
+      background: #FFFF;
       top: 80px;
       left: -100%;
       text-align: center;
@@ -116,14 +145,43 @@ nav ul li a {
     nav ul li a{
       font-size: 20px;
     }
-    a:hover,a.active{
+    
+    a:hover{
       background: none;
-      color: #0082e6;
+      color: #2443cc;
     }
+
     #check:checked ~ ul{
       left: 0;
     }
-  }
+
+    .container {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .container-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    .orient {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 15px;
+        color:red;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+
+}
   section{
     background: url(bg1.jpg) no-repeat;
     background-size: cover;
@@ -151,4 +209,20 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.orient {
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 50px;
+    color:red;
 }
